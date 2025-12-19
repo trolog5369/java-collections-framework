@@ -93,6 +93,3 @@ IT Undergraduate | Java Backend & Full Stack Developer in Progress
 > *Consistency over motivation. Understanding over memorization.*
 
 ---
-
-
-Sleep now. Tomorrow we execute.
