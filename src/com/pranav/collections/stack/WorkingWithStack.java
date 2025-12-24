@@ -9,7 +9,7 @@ public class WorkingWithStack {
         stack.push(2);
         stack.push(4);
 
-        // 3 is at the top of the last as it was added last 
+        // 4 is at the top of the last as it was added last 
 
         // to peek ie view the last element of the stack(Top element at the stack) use the peek()
         System.out.println(stack.peek());
