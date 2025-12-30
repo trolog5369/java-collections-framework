@@ -1,6 +1,4 @@
-Alright. I’ll fix it properly.
-**Pure Markdown. Clean. Readable. No code blocks. No Java snippets. No garbage in the middle.**
-You can paste this straight into README.md.
+
 
 ---
 
@@ -130,5 +128,3 @@ override `equals()` and `hashCode()` — **or do not use it as a key at all**.
 
 ---
 
-This version is **README-clean**, professional, and recruiter-safe.
-If you want it **shorter**, **more interview-focused**, or **more beginner-friendly**, say it directly.
