@@ -21,7 +21,7 @@ Example:
 ```java
 new Person("Jamalia").hashCode();
 Calling this multiple times produces the same integer.
-
+```
 Why Hashing Exists
 
 Hash-based collections use hashing for fast lookup.
