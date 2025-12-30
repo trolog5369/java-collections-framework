@@ -1,41 +1,48 @@
+
+
+---
+
 # 🗺️ Java Collections — Map
 
 ## What is a Map?
 
 A **Map** is a collection of **key–value pairs**.
 
-- Each **key is unique**
-- Each key maps to **at most one value**
-- **Values can be duplicated**
-- Keys act as **identifiers**
+* Each **key is unique**
+* Each key maps to **at most one value**
+* **Values can be duplicated**
+* Keys act as **identifiers**
 
-Example:
-Key → Value
-1 → Alex
-2 → Jasmine
-3 → Mariam
+**Example:**
 
+```
+Key → Value  
+1   → Alex  
+2   → Jasmine  
+3   → Mariam
+```
 
 ---
 
 ## Key Characteristics of Map
 
-- ❌ No duplicate keys
-- ✅ Duplicate values allowed
-- ❌ No index-based access
-- ✅ Fast lookup using keys
-- ❌ Not part of the `Collection` interface
+* ❌ No duplicate keys
+* ✅ Duplicate values allowed
+* ❌ No index-based access
+* ✅ Fast lookup using keys
+* ❌ Not part of the `Collection` interface
 
 ---
 
 ## Map in Java
 
-- `Map` is an **interface**
-- Common implementations:
-  - `HashMap`
-  - `LinkedHashMap`
-  - `TreeMap`
-  - `Hashtable` (legacy)
+* `Map` is an **interface**
+* Common implementations:
+
+  * `HashMap`
+  * `LinkedHashMap`
+  * `TreeMap`
+  * `Hashtable` (legacy)
 
 In this module, **HashMap** is used.
 
@@ -43,96 +50,125 @@ In this module, **HashMap** is used.
 
 ## Common Map Implementations (Quick Overview)
 
-- **HashMap**
-  - Allows one `null` key
-  - No order guarantee
-  - Fast (`O(1)` average)
+### HashMap
 
-- **LinkedHashMap**
-  - Maintains insertion order
-  - Slightly slower than HashMap
-  - Internally uses a doubly linked list
+* Allows one `null` key
+* No order guarantee
+* Fast (`O(1)` average)
 
-- **TreeMap**
-  - Sorted by keys
-  - No `null` keys allowed
-  - Backed by Red-Black Tree
+### LinkedHashMap
 
-- **Hashtable**
-  - Thread-safe (synchronized)
-  - No `null` keys or values
-  - Legacy and rarely used
+* Maintains insertion order
+* Slightly slower than HashMap
+* Internally uses a doubly linked list
+
+### TreeMap
+
+* Sorted by keys
+* No `null` keys allowed
+* Backed by Red-Black Tree
+
+### Hashtable
+
+* Thread-safe (synchronized)
+* No `null` keys or values
+* Legacy and rarely used
 
 ---
 
 ## Operations Covered
 
 ### Creating a Map
+
 ```java
 Map<Integer, Person> map = new HashMap<>();
+```
 
-Adding elements
+### Adding Elements
+
+```java
 map.put(1, new Person("Alex"));
+```
 
+* If the key already exists → value is overwritten
 
-If the key already exists → value is overwritten
+### Removing Elements
 
-Removing elements
+```java
 map.remove(1);
+```
 
-Accessing a value
+### Accessing a Value
+
+```java
 map.get(1);
+```
 
-Checking key existence
+### Checking Key Existence
+
+```java
 map.containsKey(4);
+```
 
-Getting size
+### Getting Size
+
+```java
 map.size();
+```
 
-Retrieving keys, values, and entries
+### Retrieving Keys, Values, and Entries
+
+```java
 map.keySet();     // All keys
 map.values();     // All values
 map.entrySet();   // Key–value pairs
+```
 
-Iterating through a Map
+### Iterating Through a Map
+
+```java
 map.entrySet().forEach(System.out::println);
+```
 
-Default value handling
+### Default Value Handling
+
+```java
 map.getOrDefault(4, new Person("Default"));
+```
 
-Returns the default value if the key is absent.
+* Returns the default value if the key is absent
 
-Important Notes
+---
 
-Duplicate keys are not allowed
+## Important Notes
 
-Adding a duplicate key replaces the old value
+* Duplicate keys are not allowed
+* Adding a duplicate key replaces the old value
+* Maps are ideal for lookup-based problems
+* HashMap does not guarantee order
 
-Maps are ideal for lookup-based problems
+---
 
-HashMap does not guarantee order
+## What I Learned Today
 
-What I Learned Today
+* What a Map is and why it exists
+* Difference between keys and values
+* Why keys must be unique
+* How HashMap handles duplicates
+* Core Map operations and traversal
+* When to use Map instead of List or Set
 
-What a Map is and why it exists
+---
 
-Difference between keys and values
+## List vs Set vs Map (Final Recall)
 
-Why keys must be unique
+* **List** → Ordered, allows duplicates
+* **Set** → No duplicates, no order
+* **Map** → Key–value pairs, unique keys
 
-How HashMap handles duplicates
+**Rule of thumb:**
+If you need fast lookup by an identifier → **use a Map**
 
-Core Map operations and traversal
+---
 
-When to use Map instead of List or Set
 
-List vs Set vs Map (Final Recall)
-
-List → Ordered, allows duplicates
-
-Set → No duplicates, no order
-
-Map → Key–value pairs, unique keys
-
-Rule of thumb:
-If you need fast lookup by an identifier → use a Map
