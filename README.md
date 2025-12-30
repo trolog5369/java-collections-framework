@@ -1,87 +1,122 @@
+
+---
+
 # Java Collections Framework
 
 ## Overview
 
-This repository documents my structured and hands-on learning of the **Java Collections Framework**.
-The goal is not just to “know the syntax”, but to **understand when, why, and how** to use different collections in real backend systems.
+This repository documents my **completed, structured, and hands-on learning** of the **Java Collections Framework**.
 
-This repo is part of my **Java → Backend → Full Stack** journey and will directly support upcoming work with **JDBC, Spring Boot, and real-world data handling**.
+The goal was never to just memorize APIs — it was to **understand behavior, performance, trade-offs, and correct usage** of collections in real backend systems.
+
+This repository now serves as a **finished foundation** for upcoming work with **JDBC, Spring Boot, and real-world data handling**.
 
 ---
 
 ## Why This Repository Exists
 
 Most beginners *use* collections.
-Very few actually **understand their behavior, performance, and trade-offs**.
+Very few actually **understand what happens under the hood**.
 
-This repository focuses on:
+This repository was built to close that gap by focusing on:
 
 * Correct usage over shortcuts
 * Internal behavior where it matters
 * Practical examples instead of theory-only notes
-* Building instincts required for backend development
+* Developing backend-level instincts, not tutorial habits
 
 ---
 
-## Topics Covered (Growing Over Time)
-
-> ⚠️ This is a **living repository** — content will expand and improve.
+## Topics Covered (Completed)
 
 ### Core Collections
 
-* List (`ArrayList`, `LinkedList`)
-* Set (`HashSet`, `LinkedHashSet`, `TreeSet`)
-* Map (`HashMap`, `LinkedHashMap`, `TreeMap`)
+* **List**
+
+  * `ArrayList`
+  * `LinkedList`
+
+* **Set**
+
+  * `HashSet`
+  * `LinkedHashSet`
+  * `TreeSet`
+
+* **Map**
+
+  * `HashMap`
+  * `LinkedHashMap`
+  * `TreeMap`
+
+* **Queue**
+
+  * `LinkedList` (FIFO behavior)
+
+* **Stack**
+
+  * Legacy `Stack` class
+  * LIFO behavior and internal working
+
+---
 
 ### Key Concepts
 
-* Differences between List, Set, and Map
+* Differences between **List vs Set vs Map**
+* FIFO vs LIFO behavior
 * Iteration techniques
-* Mutability and immutability
-* Null handling
+* Mutability vs immutability
+* Null handling across implementations
 * Ordering vs sorting
 * Performance implications (time & space complexity)
-* When *not* to use a particular collection
+* When **not** to use a particular collection
 
-### Advanced & Practical
+---
 
-* Custom objects in collections
-* `equals()` and `hashCode()` importance
-* Comparators vs Comparable
-* Fail-fast vs fail-safe behavior
-* Common mistakes and edge cases
+### Advanced & Practical Concepts
+
+* Custom objects inside collections
+* Importance of `equals()` and `hashCode()`
+* Hashing and bucket-based lookup
+* Why HashMap is fast
+* Key replacement and duplicate handling
+* Common beginner mistakes and silent bugs
+* Real-world usage patterns
 
 ---
 
 ## Learning Approach
 
-* Follow a **structured learning path** (currently using Amigoscode)
-* Rebuild examples manually instead of copy-pasting
-* Experiment with edge cases
-* Document insights through code, not long theory files
-* Refactor code as understanding improves
+* Followed a **structured learning path** (Amigoscode)
+* Rebuilt examples manually — no blind copy-paste
+* Tested edge cases intentionally
+* Focused on **code-based understanding**, not long theory docs
+* Refactored code as understanding improved
+
+This repository reflects **learning through implementation**, not passive consumption.
 
 ---
 
 ## How This Fits Into My Bigger Plan
 
-This repository is a **foundation repo**.
+This is a **foundation repository**.
 
-Next steps:
+What comes next:
 
-* Apply collections heavily in **JDBC**
-* Use them in **Spring Boot APIs**
-* Handle real application data correctly
-* Write cleaner, safer, and more efficient backend code
+* Heavy usage of collections in **JDBC**
+* Real data handling in **Spring Boot APIs**
+* Correct modeling of application data
+* Writing cleaner, safer, and more efficient backend code
 
-This is preparation for **production-level Java**, not just interviews.
+This repository prepares me for **production-level Java**, not just interviews.
 
 ---
 
 ## Status
 
-🟡 **In Progress**
-This README and the codebase will evolve as my understanding deepens.
+🟢 **Completed**
+
+The Java Collections Framework has been fully covered.
+This repository is now **stable and complete**.
 
 ---
 
@@ -93,3 +128,4 @@ IT Undergraduate | Java Backend & Full Stack Developer in Progress
 > *Consistency over motivation. Understanding over memorization.*
 
 ---
+
