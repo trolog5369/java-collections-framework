@@ -20,6 +20,7 @@
 Example:
 ```java
 new Person("Jamalia").hashCode();
+```
 Calling this multiple times produces the same integer.
 
 Why Hashing Exists
